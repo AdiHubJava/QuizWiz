@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- QuizWiz App: activity_main.xml                                                -->
+<!-- UI for presenting two options: Make Quiz or Play Quiz                         -->
+<!-- Design & Development: ADITEY NANDAN (Class: IX-H, DPS NOIDA)                  -->
+<!-- Last Update: August 03, 2020                                                  -->
+<!-- All Rights Reserved. Contact nandan.aditey@gmail.com before using the code -  -->
+<!-- in any manner. No liability for any problems while using this code.           -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonMake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/middle_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClickMakeQuiz"
+        android:text="Make Quiz"
+        android:textColor="#20B07C"
+        android:textSize="45dp"/>
+
+    <View
+        android:id="@+id/middle_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#20B07C" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/middle_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickPlayQuiz"
+        android:text="Play Quiz"
+        android:textColor="#20B07C"
+        android:textSize="45dp" />
+</RelativeLayout>

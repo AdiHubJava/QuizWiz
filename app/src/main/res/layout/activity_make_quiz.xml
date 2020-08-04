@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- QuizWiz App: activity_make_quiz.xml                                           -->
+<!-- UI for capturing quiz details for Make Quiz                                   -->
+<!-- Design & Development: ADITEY NANDAN (Class: IX-H, DPS NOIDA)                  -->
+<!-- Last Update: August 03, 2020                                                  -->
+<!-- All Rights Reserved. Contact nandan.aditey@gmail.com before using the code -  -->
+<!-- in any manner. No liability for any problems while using this code.           -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeQuiz">
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"
+           android:text="Make Quiz"
+           android:textColor="#20B07C"
+           android:textSize="36sp" />
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/textView1"
+           android:layout_margin="15dp"
+           android:text="Specify Your Quiz Details:"
+           android:textSize="20sp"
+           android:textColor="#000000"
+           tools:layout_editor_absoluteX="16dp"
+           tools:layout_editor_absoluteY="128dp" />
+
+       <EditText
+           android:id="@+id/editText1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/textView2"
+           android:layout_margin="15dp"
+           android:ems="10"
+           android:hint="Title of Quiz"
+           android:inputType="textPersonName"
+           tools:layout_editor_absoluteX="99dp"
+           tools:layout_editor_absoluteY="202dp" />
+
+       <EditText
+           android:id="@+id/editText2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/editText1"
+           android:layout_margin="15dp"
+           android:ems="10"
+           android:hint="Topic of Quiz"
+           android:inputType="textPersonName"
+           tools:layout_editor_absoluteX="99dp"
+           tools:layout_editor_absoluteY="279dp" />
+
+       <EditText
+           android:id="@+id/editText3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/editText2"
+           android:layout_marginStart="15dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="15dp"
+           android:layout_marginEnd="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginBottom="15dp"
+           android:ems="10"
+           android:hint="Number of Questions"
+           android:inputType="number"
+           tools:layout_editor_absoluteX="99dp"
+           tools:layout_editor_absoluteY="358dp" />
+
+       <CheckBox
+           android:id="@+id/checkboxTime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/editText3"
+           android:layout_margin="15dp"
+           android:onClick="timeSet"
+           android:text="Time-bound Quiz" />
+
+       <EditText
+           android:id="@+id/editText4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/checkboxTime"
+           android:layout_margin="15dp"
+           android:ems="10"
+           android:visibility="invisible"
+           android:hint="Time in Minutes"
+           android:inputType="number"
+           tools:layout_editor_absoluteX="99dp"
+           tools:layout_editor_absoluteY="358dp" />
+
+       <Button
+           android:id="@+id/btnSubmit"
+           android:clickable="false"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentBottom="true"
+           android:text="Submit"
+           android:textColor="#000000"
+           android:onClick="buttonSubmitPress"
+           android:layout_marginBottom="10dp"/>
+</RelativeLayout>

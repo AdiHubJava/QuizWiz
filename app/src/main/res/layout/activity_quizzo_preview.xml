@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- QuizWiz App: activity_quizzo_preview.xml                                      -->
+<!-- UI for presenting a 5 seconds preview screen at opening the app               -->
+<!-- Design & Development: ADITEY NANDAN (Class: IX-H, DPS NOIDA)                  -->
+<!-- Last Update: August 03, 2020                                                  -->
+<!-- All Rights Reserved. Contact nandan.aditey@gmail.com before using the code -  -->
+<!-- in any manner. No liability for any problems while using this code.           -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".QuizzoPreview">
+
+    <ImageView android:src = "@drawable/people_quizzing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="QuizWiz"
+        android:textColor="#20B07C"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/text_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_by"
+        android:layout_centerHorizontal="true"
+        android:text="Created: 03 AUG 2020"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="by Aditey Nandan, DPS Noida"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+</RelativeLayout>
