@@ -1,9 +1,9 @@
 //-------------------------------------------------------------------------------//
 // QuizWiz App: AnswerQuiz Class
 // To present questions to users and to take user's answer
-// Design & Development: ADITEY NANDAN (Class: IX-H, DPS NOIDA)
+// Design & Development: ADITEY N (DPS NOIDA)
 // Last Update: August 03, 2020
-// All Rights Reserved. Contact nandan.aditey@gmail.com before using the code -
+// All Rights Reserved. Contact "pro.aditey@gmail.com" before using the code -
 // in any manner. No liability for any problems while using this code.
 //-------------------------------------------------------------------------------//
 
